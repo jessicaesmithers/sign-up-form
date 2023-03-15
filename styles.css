@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Norse';
+    src:  url('Norse-Bold.otf') format('otf'),
+          url('Norse-Bold.otf') format('otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* left side */
+h1 {
+    color: white;
+    background-color:#060b0f;
+    opacity: 0.5;
+    font-family: Norse;
+    text-align: center;
+    padding: 30px;
+    font-size: 5rem;
+    margin-bottom: 50vh;
+}
+
+h6 {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.left {
+    background-image: url("trees.avif");
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+img {
+    height: 5rem;
+}
+
+/* right side */
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.r-top {
+    background-color: rgb(240,238,244);
+    padding: 100px 70px 50px 40px;
+    flex: 3;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+
+.r-mid {
+    flex: 2;
+    padding: 20px 40px;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.r-bottom {
+    padding: 40px;
+    flex: 3;
+}
+
+form {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.r-top > p:nth-of-type(2){
+    margin-top: 1rem;
+}
+
+input {
+    margin: 0 20px 20px 0;
+    height: 2rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 2px solid #eee;
+}
+
+form > div {
+    display: flex;
+    justify-content: stretch;
+}
+
+.row1 > div, .row2 > div, .row3 > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button[type="submit"] {
+    background-color: #30544a;
+    color: white;
+    border-radius: 5px;
+    width: 240px;
+    padding: 20px;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 3px 3px 10px gray;
+    margin-bottom: 2rem;
+}
+
+button[type="submit"]:hover {
+    color: #30544a;
+    background-color: white;
+    outline: 2px solid #30544a;
+}
+
+input:focus {
+    box-shadow: 3px 3px 10px gray;
+    outline: 2px solid #48647b;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+label {
+    letter-spacing: 0.1rem;
+}
+
+#mismatch {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    color: red;
+    visibility: hidden;
+}
+
+.row3 input:first-of-type {
+    margin-bottom: 0;
+}
