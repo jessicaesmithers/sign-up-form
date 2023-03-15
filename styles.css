@@ -137,12 +137,12 @@ label {
 }
 
 .r-bottom {
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
     flex: 3;
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     flex-basis: 0;
+    flex-wrap: wrap;
 }
 
 button[type="submit"] {
